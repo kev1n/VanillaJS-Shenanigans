@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet">
+        <title>Bill calculator</title>
+    </head>
+    <body>
+        <div class="container grid">
+            <div class="calculator">
+                <p class="title">Bill calculator</p>
+                <hr>
+                <form>
+                    <label>How much was the total bill:<br></label>
+                    <input placeholder="$100" id="cost"></input>
+
+                    <label>How many people is it split among?<br></label>
+                    <input placeholder="5 people" id="people"></input>
+
+                    <label>What is the tax rate?<br></label>
+                    <input placeholder="8.875%" id="tax"></input>
+
+                    <label>What is the tip rate?<br></label>
+                    <input placeholder="15%" id="tip"></input>
+
+                    <button type="button" id="submit" onclick="updateInfo()">Submit</button>
+                </form>
+                <p id="info"></p>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
